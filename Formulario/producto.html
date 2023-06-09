@@ -13,16 +13,47 @@
     <h1>Formulario de Producto</h1>
     <form onsubmit="return validarFormulario()">
       <div class="form-group">
-        <label for="nombre">Nombre:</label>
-        <input type="text" class="form-control" id="nombre" required>
-      </div>
-      <div class="form-group">
-        <label for="precio">Precio:</label>
-        <input type="number" class="form-control" id="precio" required>
-      </div>
+        <label for="codigo">Codigo:</label>
+        <input type="text" class="form-control" id="codigo" required>
+      </div>      
       <div class="form-group">
         <label for="descripcion">Descripción:</label>
         <textarea class="form-control" id="descripcion" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="Codigo_barra">Codigo de barra:</label>
+        <input type="number" class="form-control" id="Codigo_barra" required>
+      </div>
+      <div class="form-group">
+        <label for="precio">Precio Unitario:</label>
+        <input type="number" class="form-control" id="precio" required>
+      </div>
+      <div class="form-group">
+        <label for="stock">Stock:</label>
+        <input type="number" class="form-control" id="stock" required>
+      </div>
+      <div class="form-group">
+        <label for="proveedor">Proveedor:</label>
+        <input type="text" class="form-control" id="proveedor" required>
+      </div> 
+      <div class="form-group">
+        <label for="estado">Estado:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="estado" required>
+          <label class="form-check-label" for="estado">
+            Activo
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="categoria">Categoría:</label>
+        <select class="form-select" id="categoria" required>
+          <option selected disabled value="">Eliga una categoría...</option>
+          <option>Categoría 1</option>
+          <option>Categoría 2</option>
+          <option>Categoría 3</option>
+          <option>Categoría 4</option>
+        </select>
       </div>
       <button type="submit" class="btn btn-primary">Guardar</button>
     </form>
