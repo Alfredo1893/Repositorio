@@ -1,4 +1,6 @@
-function validarFormulario() {
+function validarFormulario(event) {
+    event.preventDefault();
+  
     var codigo = document.getElementById("codigo").value;
     var descripcion = document.getElementById("descripcion").value;
     var codigo_barra = document.getElementById("Codigo_barra").value;
@@ -10,32 +12,32 @@ function validarFormulario() {
   
     switch (true) {
         case codigo.trim() === "":
-          alert("Por favor, ingrese el codigo.");
-          return false;
+          alert("¡Por favor, ingrese el codigo!");
+          break;
         case descripcion.trim() === "":
-          alert("Por favor, ingrese la descripción.");
-          return false;  
+          alert("¡Por favor, ingrese la descripción!");
+          break; 
         case codigo_barra.trim() === "":
-          alert("Por favor, ingrese el codigo de barra.");
-          return false;          
+          alert("¡Por favor, ingrese el codigo de barra!");
+          break;          
         case precio.trim() === "":
-          alert("Por favor, ingrese el precio.");
-          return false;
+          alert("¡Por favor, ingrese el precio!");
+          break;
         case stock.trim() === "":
-          alert("Por favor, ingrese el stock del producto.");
-          return false;
+          alert("¡Por favor, ingrese el stock del producto!");
+          break;
         case proveedor.trim() === "":
-          alert("Por favor, ingrese el nombre de los proveedores.");
-          return false;
+          alert("¡Por favor, ingrese el nombre de los proveedores!");
+          break;
         case estado.trim() === "":
-          alert("Por favor, valide el estado.");
-          return false;          
+          alert("¡Por favor, valide el estado!");
+          break;          
         case categoria.trim() === "":
-          alert("Por favor, ingrese la descripción.");
-          return false;
+          alert("¡Por favor, ingrese la categoria!");
+          break;
         default:
-          alert("¡El formulario se envió correctamente!");
-          return true;
+          window.location.href = "confirmacion.html";
+          break;
       }
   }
   
