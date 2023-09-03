@@ -1,0 +1,114 @@
+/* Reset de Estilos */
+  body, h1, h2, h3, p, ul, li {
+    margin: 100;
+    padding: 1000;
+  }
+  .message-container {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  } 
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos de la Tienda */
+  .store {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .Header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 35px;
+  }
+ 
+  header h1 {
+    font-size: 36px;
+    font-weight: bold; 
+    text-transform: uppercase; 
+    margin-bottom: 10px; 
+  }
+  
+  
+  .game-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .game-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .game-form {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+  }
+  
+  .input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .edit-form {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .edit-form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .menustryle[type="text"] {
+    width: 100%;
+    padding: 28px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Estilos Responsivos */
+  @media screen and (max-width: 768px) {
+    .item {
+      flex-direction: column;
+    }
+  
+    .form {
+      padding: 10px;
+    }
+  
+    .form {
+      padding: 5px;
+    }
+  }
+  
